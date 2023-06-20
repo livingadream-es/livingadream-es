@@ -270,6 +270,11 @@ blockquote {
 
 </head>
 <body>
+  <script
+  src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+  integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
   <script>
     $(function(){
   
@@ -476,7 +481,7 @@ blockquote {
 
       <div class="timeline-item">
         <div class="timeline-img"></div>
-        <div class="timeline-content timeline-card js--fadeInRight">
+        <div class="timeline-content timeline-card js--fadeInLeft">
           <div class="timeline-img-header" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('./static_files/sanpedro-interior.JPG') center center no-repeat;">
             <h2 class="timeline-img-header-h2">Ceremonia</h2>
           </div>
@@ -510,7 +515,7 @@ blockquote {
 
       <div class="timeline-item">
         <div class="timeline-img"></div>
-        <div class="timeline-content timeline-card js--fadeInRight">
+        <div class="timeline-content timeline-card js--fadeInLeft">
           <div class="timeline-img-header" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0, .4)), url('./static_files/cupula.jpeg') center center no-repeat;">
             <h2 class="timeline-img-header-h2">Banquete</h2>
           </div>
@@ -518,8 +523,7 @@ blockquote {
           <div class="timeline-card-p">
             <p><i class="fa fa-clock-o"></i>   21:15</p>
             <p>Finalizado el cóctel, nos sentaremos cada uno en su mesa asignada para disfrutar del menú de la boda. ¡Esperemos que os
-              guste!<br>
-              Al termino de la cena, comenzaremos la fiesta abriendo la barra libre.</p>
+              guste!<br></p>
             <p><i class="fa fa-map-marker"></i>   <a href="https://www.google.com/maps/dir//Sofraga+Palacio+WorldHotels+Crafted+Collection,+Calle+de+L%C3%B3pez+N%C3%BA%C3%B1ez,+%C3%81vila/@40.6576077,-4.7186883,14.51z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd40f31cc44682df:0xd9c9fe6ff981f2e9!2m2!1d-4.6980103!2d40.6576996?entry=ttu">Sofraga Palacio</a></p>
           </div>
         </div>
@@ -887,7 +891,7 @@ blockquote {
           <h3>Javier</h3>
           <p class="w3-opacity">El novio</p>
           <p>Abulense de nacimiento, nómada por obligación. Apasionado de la tortilla de patata, pero
-            la de verdad con su cebollita y poco cuajada. Soñador en grande, procrastinador empedernido,
+            la de verdad, con su cebollita y poco cuajada. Soñador en grande, procrastinador empedernido,
             siempre pensando como mejorar todo.
             <br>
             Ingeniero, optimizador de cosas.</p>
@@ -920,7 +924,6 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   document.getElementById("title01").innerHTML =element.alt;
   var captionText = document.getElementById("caption");
-  console.log(element.getAttribute("description"))
   captionText.innerHTML = element.getAttribute("description");
 }
 
@@ -1009,8 +1012,6 @@ function addToCalendar() {
 
   // Abrir la aplicación de calendario correspondiente
   window.location.href = url;
-  console.log(window.location.href);
-  console.log(url);
 }
 
 
