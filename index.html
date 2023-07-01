@@ -338,6 +338,7 @@ blockquote {
     <div class="w3-right w3-hide-small">
       <a href="#rsvp" class="w3-bar-item w3-button"><i class="fa fa-th"></i> RSVP</a>
       <a href="#timeline" class="w3-bar-item w3-button"><i class="fa fa-calendar"></i> Timeline</a>
+      <a href="#music" class="w3-bar-item w3-button"><i class="fa fa-play"></i> Música</a>
       <a href="#housing" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Alojamiento</a>
       <a href="#gastronomy" class="w3-bar-item w3-button"><i class="material-icons" style="font-size:14px">restaurant</i> Gastronomía</a>
       <a href="#tourism" class="w3-bar-item w3-button"><i class="material-icons" style="font-size:14px">museum</i> Turismo</a>
@@ -356,6 +357,7 @@ blockquote {
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#rsvp" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-th"></i> RSVP</a>
   <a href="#timeline" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-calendar"></i> Timeline</a>
+  <a href="#music" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-play"></i> Música</a>
   <a href="#housing" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fa fa-home"></i> Alojamiento</a>
   <a href="#gastronomy" class="w3-bar-item w3-button" onclick="w3_close()"><i class="material-icons" style="font-size:14px">restaurant</i> Gastronomía</a>
   <a href="#tourism" class="w3-bar-item w3-button" onclick="w3_close()"><i class="material-icons" style="font-size:14px">museum</i> Turismo</a>
@@ -564,12 +566,21 @@ blockquote {
   </section>
 </div>
 
+<!-- Music Section -->
+<div class="w3-container w3-center w3-light-grey" style="padding:64px 16px" id="music">
+  <h2>MÚSICA</h2>
+  
+  <p class="w3-large">Colabora con la música que sonará</p>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4Jsvg7AM1AIyLfv5QnKgd0?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</div>
+
 <!-- Housing Section -->
 <div class="w3-container w3-center w3-dark-grey" style="padding:64px 16px" id="housing">
   <h2>ALOJAMIENTO</h2>
   <p class="w3-large">¿Sois de los invitados a los que hacemos viajar y no tenéis dónde alojaros? Pues atentos a este apartado porque os interesa.<br>
 
-    Sabemos el esfuerzo que hacéis en desplazaros cientos de kilómetros hasta la ciudad amurallada. Por eso queremos facilitaros la búsqueda de hospedaje para vuestra estancia en Ávila. Aquí os proponemos los hoteles y las hospederías en los que hemos bloqueado habitaciones para que tengáis garantizado el alojamiento.<br>
+    Sabemos el esfuerzo que hacéis en desplazaros cientos de kilómetros hasta la ciudad amurallada. Por eso, queremos facilitaros la búsqueda de hospedaje para vuestra estancia en Ávila. Aquí os proponemos los hoteles y las hospederías en los que hemos bloqueado habitaciones para que tengáis garantizado el alojamiento.<br>
     
     Como decimos, es una propuesta, en Ávila hay muchas más opciones: otros hoteles, hostales, apartamentos Airbnb, etc. Podéis escoger la que más os interese.</p>
   <div class="w3-row-padding" style="margin-top:64px">
@@ -818,7 +829,7 @@ blockquote {
 <!-- Tourism Section -->
 <div class="w3-container w3-dark-grey" style="padding:64px 16px" id="tourism">
   <h2 class="w3-center">Turismo</h2>
-  <p class="w3-center w3-large">¿Sois de los invitados que todavía no conocen Ávila? Pues atentos porque aquí os compartimos qué cosas no podéis dejar por visitar. En cada imagen podéis encontrar el nombre y una breve descripción</p>
+  <p class="w3-center w3-large">¿Sois de los invitados que todavía no conocen Ávila? Pues atentos porque aquí os compartimos qué cosas no podéis dejar sin visitar. En cada imagen podéis encontrar el nombre y una breve descripción</p>
 
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
@@ -877,7 +888,9 @@ blockquote {
       En el patio y la fachada destacan los motivos heráldicos catedralicios.">
     </div>
     <div class="w3-col l3 m6">
-      <img src="./static_files/santotomas-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="REAL MONASTERIO DE SANTO TOMÁS" description="content">
+      <img src="./static_files/santotomas-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="REAL MONASTERIO DE SANTO TOMÁS" description="El Real Monasterio de Santo Tomás fue construido bajo el mecenazgo de Hernando Núñez de Arnalte, tesorero de los Reyes Católicos; su mujer María Dávila, el inquisidor fray Tomás de Torquemada y de los Reyes Católicos. Su construcción se inició en el año 1482 y terminó once años después,en1493. 
+      
+      Fue Declarado Monumento Nacional en 1931.">
     </div>
   </div>
 
@@ -893,7 +906,23 @@ blockquote {
       Es de estilo isabelino, construida con sillería de granito.">
     </div>
     <div class="w3-col l3 m6">
-      <img src="./static_files/4postes-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="LOS 4 POSTES" description="content">
+      <img src="./static_files/4postes-min.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="LOS 4 POSTES" description="Se trata del humilladero de San Sebastián, conocido
+      comúnmente como “Cuatro Postes”. El conjunto arquitectónico, que data del 1566,
+      está compuesto por cuatro
+      monolíticas columnas dóricas unidas por un arquitrabe, que ostenta el escudo de
+      la ciudad; en el centro una cruz granítica.
+      
+      
+      No se conoce con
+      certeza los motivos de su construcción. Hay autores que afirman que se levantó
+      donde en época romana se situaba un pequeño templo. Mientras que otros, defienden
+      que se construyó para rememorar el lugar donde Francisco Cepeda, tío de Teresa
+      de Jesús, encontró a la Santa y a su hermano.
+      
+      
+      Sea como fuere
+      el motivo de su construcción, es un mirador único en el que se puede ver toda
+      la ciudad amurallada.">
     </div>
     <div class="w3-col l3 m6">
       <img src="./static_files/verraco-min.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="VERRACO" description="Es una gran escultura animal que puede representar estilizadamente a toros, cerdos u otros animales de ganado. Son características de los Vetones, un pueblo celtibérico del oeste de la meseta. Su época de apogeo se dio entre los siglos V y II a. C
@@ -916,7 +945,6 @@ blockquote {
   </div>
 </div>
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4Jsvg7AM1AIyLfv5QnKgd0?utm_source=generator&theme=0" width="100%" height="600" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 <!-- Contact Section -->
 <div class="w3-container" style="padding: 64px 16px;" id="contact">
